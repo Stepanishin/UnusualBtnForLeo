@@ -1,0 +1,43 @@
+.figur-button-empty {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 61px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.figur-button-empty::before,
+.figur-button-empty::after {
+  flex-shrink: 0;
+  display: block;
+  width: 31px;
+  height: 61px;
+  background-image: url("data:image/svg+xml,%3Csvg width='31' height='61' viewBox='0 0 31 61' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M31 1C30.2063 1 27.7619 1.58512 24.3333 3.92562L3.38095 18.0661C2.5873 18.5537 1 20.1141 1 22.4545C1 24.795 1 42.9339 1 51.7107C1 54.4738 2.61905 60 9.09524 60H31' stroke='%237253EF'/%3E%3C/svg%3E%0A");
+  background-size: 31px 61px;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+}
+
+.figur-button-empty::after {
+  transform: scale(-1);
+}
+
+.figur-button-empty div {
+  flex-grow: 1;
+  height: 61px;
+  border-top: 1px solid #7253EF;
+  border-bottom: 1px solid #7253EF;
+}
+  
+.figur-button-empty span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  line-height: 1.5;
+  color: #7253EF;
+}

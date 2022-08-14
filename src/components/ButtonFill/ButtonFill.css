@@ -1,0 +1,46 @@
+.figur-button-filled {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 61px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.figur-button-filled::before,
+.figur-button-filled::after {
+  flex-shrink: 0;
+  display: block;
+  width: 31px;
+  height: 61px;
+  background-image: url("data:image/svg+xml,%3Csvg width='31' height='61' viewBox='0 0 31 61' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24.3909 3.43917L24.3931 3.43768C26.1352 2.24781 27.6183 1.51028 28.7565 1.07149C29.5045 0.783102 30.0919 0.628142 30.5 0.555012V60.5H8.36508C5.18717 60.5 3.24633 59.1553 2.0821 57.4987C0.899553 55.816 0.5 53.7805 0.5 52.4298V22.1818C0.5 19.9912 1.99564 18.5172 2.72216 18.0706L2.73127 18.065L2.74013 18.059L24.3909 3.43917Z' fill='%237253EF' stroke='%237253EF'/%3E%3C/svg%3E%0A");
+  background-size: 31px 61px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  content: '';
+  margin-right: -1px;
+}
+  
+.figur-button-filled::after {
+  transform: scale(-1);
+  background-position: left center;
+  margin-left: -2px;
+  margin-right: 0;
+}
+
+.figur-button-filled div {
+  flex-grow: 1;
+  height: 61px;
+  background: #7253EF;
+}
+
+.figur-button-filled span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
